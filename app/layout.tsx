@@ -1,11 +1,12 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { ThemeProvider } from '@/components/theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Social Media Performance Analysis',
-  description: 'Analyze your social media engagement with AI',
+  title: 'Beyond Insights - Social Media Analytics',
+  description: 'Transform your social media strategy with AI-powered analytics',
 }
 
 export default function RootLayout({
@@ -16,9 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen bg-gray-100">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   )

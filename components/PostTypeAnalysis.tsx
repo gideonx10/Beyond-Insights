@@ -12,9 +12,11 @@ interface PostTypeData {
 }
 
 export default function PostTypeAnalysis() {
+  const [mounted, setMounted] = useState(false)
   const [data, setData] = useState<PostTypeData[]>([])
 
   useEffect(() => {
+    setMounted(true)
     // Simulating API call to fetch data
     const fetchData = async () => {
       // In a real app, this would be an API call to your backend
@@ -27,6 +29,10 @@ export default function PostTypeAnalysis() {
     }
     fetchData()
   }, [])
+
+  if (!mounted) {
+    return null // Return null on server-side
+  }
 
   return (
     <Card>
