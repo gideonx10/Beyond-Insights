@@ -15,20 +15,22 @@ export default function Home() {
 
       {/* Hero Section */}
       <main className="flex-1 w-full">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex flex-col items-center justify-center">
-          <div className="container px-4 md:px-6">
+        {/* Transform Section with Blurred Background */}
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex flex-col items-center justify-center relative">
+          <div className="absolute inset-0 bg-black backdrop-blur-md"></div>
+          <div className="container px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center text-center">
               <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white">
                   Transform Your Social Media Analytics
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
                   Unlock powerful insights with AI-driven analytics. Make data-driven decisions to grow your social media presence.
                 </p>
               </div>
               <div className="space-x-4 mt-6">
                 <Link href="/dashboard">
-                  <Button className="px-8">
+                  <Button className="px-8 bg-white text-black hover:bg-gray-100 transition-colors">
                     Get Started
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -38,7 +40,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Features Section */}
+        {/* Features Section - Unchanged */}
         <section className="py-20 md:py-32" id="features">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold text-center mb-12">Powerful Features</h2>
@@ -74,8 +76,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32" id="contact">
+        {/* Contact Section - Unchanged */}
+        <section className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center" id="contact">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
