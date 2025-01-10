@@ -39,33 +39,34 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800" id="features">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-10 sm:grid-cols-1 lg:grid-cols-3 text-center">
-              <div className="flex flex-col items-center space-y-4">
-                <div className="p-4 bg-white rounded-full dark:bg-gray-900">
-                  <BarChart2 className="h-6 w-6 text-primary" />
+        <section className="py-20 md:py-32" id="features">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-3xl font-bold text-center mb-12">Powerful Features</h2>
+            <div className="grid gap-12 md:grid-cols-3">
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 p-3 bg-primary/10 rounded-full">
+                  <BarChart2 className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-xl font-bold">Performance Analytics</h2>
-                <p className="text-gray-500 dark:text-gray-400">
+                <h3 className="text-xl font-semibold mb-2">Performance Analytics</h3>
+                <p className="text-gray-600 dark:text-gray-400">
                   Track and analyze your social media performance across different post types.
                 </p>
               </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="p-4 bg-white rounded-full dark:bg-gray-900">
-                  <MessageSquare className="h-6 w-6 text-primary" />
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 p-3 bg-primary/10 rounded-full">
+                  <MessageSquare className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-xl font-bold">AI-Powered Insights</h2>
-                <p className="text-gray-500 dark:text-gray-400">
+                <h3 className="text-xl font-semibold mb-2">AI-Powered Insights</h3>
+                <p className="text-gray-600 dark:text-gray-400">
                   Get intelligent recommendations and insights from our AI chatbot.
                 </p>
               </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="p-4 bg-white rounded-full dark:bg-gray-900">
-                  <TrendingUp className="h-6 w-6 text-primary" />
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 p-3 bg-primary/10 rounded-full">
+                  <TrendingUp className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-xl font-bold">Growth Tracking</h2>
-                <p className="text-gray-500 dark:text-gray-400">
+                <h3 className="text-xl font-semibold mb-2">Growth Tracking</h3>
+                <p className="text-gray-600 dark:text-gray-400">
                   Monitor your growth and engagement metrics in real-time.
                 </p>
               </div>
